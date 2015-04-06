@@ -171,7 +171,9 @@
   :config (setq ls-lisp-use-insert-directory-program nil))
 
 (use-package magit
-  :diminish magit-auto-revert-mode)
+  :diminish magit-auto-revert-mode
+  :config
+  (setq magit-last-seen-setup-instructions "1.4.0"))
 
 (use-package mardown-mode
   :mode (("\\.md$" . markdown-mode)))
